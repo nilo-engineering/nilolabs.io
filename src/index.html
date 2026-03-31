@@ -436,6 +436,7 @@
 
         fetch(form.action, {
           method: 'POST',
+          headers: { accept: 'application/json' },
           body: new FormData(form),
         })
           .then(function (res) {
