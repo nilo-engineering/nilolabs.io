@@ -1,6 +1,6 @@
 # Nilo Labs — Landing Page
 
-Bilingual (pt-BR / en-US) landing page for Nilo Labs.
+Official marketing website for Nilo Labs — a software boutique helping startups build and scale with technology.
 
 ## Stack
 
