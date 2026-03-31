@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nilo Labs — Product & Engineering for Startups</title>
+  <meta name="description" content="Nilo Labs ajuda startups a transformar ideias em produtos digitais reais. Product & Engineering sob demanda.">
+  <link rel="icon" href="images/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-surface text-text font-sans antialiased">
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-md border-b border-gray-100">
+    <div class="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="#" class="text-xl font-extrabold tracking-tight text-brand-800">
+        nilo<span class="text-brand-500">labs</span>
+      </a>
+      <button id="lang-toggle" type="button"
+        class="text-sm font-medium text-text-muted hover:text-brand-600 transition-colors cursor-pointer">
+        <span class="lang-pt">EN</span>
+        <span class="lang-en">PT</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="pt-32 pb-20 md:pt-44 md:pb-28 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+        <span class="lang-pt">Seu MVP no ar <span class="text-brand-600">em uma semana</span></span>
+        <span class="lang-en">Launch your MVP <span class="text-brand-600">in one week</span></span>
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-text-muted max-w-2xl mx-auto">
+        <span class="lang-pt">Time de produto sob demanda para startups que precisam validar rápido, sem overhead e sem contratações prematuras.</span>
+        <span class="lang-en">An on-demand product team for startups that need to validate fast—without overhead or premature hires.</span>
+      </p>
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#contact"
+          class="inline-flex items-center justify-center px-8 py-3.5 rounded-lg bg-brand-600 text-white font-semibold text-base hover:bg-brand-700 transition-colors shadow-lg shadow-brand-600/25">
+          <span class="lang-pt">Agendar conversa</span>
+          <span class="lang-en">Book an intro call</span>
+        </a>
+        <a href="#how-we-work"
+          class="inline-flex items-center justify-center px-8 py-3.5 rounded-lg border border-gray-200 text-text font-semibold text-base hover:border-brand-300 hover:text-brand-700 transition-colors">
+          <span class="lang-pt">Como funciona</span>
+          <span class="lang-en">How it works</span>
+        </a>
+      </div>
+      <p class="mt-6 text-sm text-text-muted">
+        <span class="lang-pt">Sem compromisso. Primeira conversa é pra entender se faz sentido.</span>
+        <span class="lang-en">No commitment. First call is just to see if it's a fit.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ VALUE PROPOSITION ============ -->
+  <section id="value" class="py-20 md:py-28 bg-surface-alt px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-center tracking-tight">
+        <span class="lang-pt">Por que startups escolhem a Nilo Labs</span>
+        <span class="lang-en">Why startups choose Nilo Labs</span>
+      </h2>
+      <div class="mt-14 grid md:grid-cols-3 gap-10">
+
+        <!-- Pillar 1 -->
+        <div class="bg-surface rounded-2xl p-8 shadow-sm border border-gray-100">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center text-brand-600 mb-5">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold">
+            <span class="lang-pt">Velocidade sem dívida técnica</span>
+            <span class="lang-en">Speed without tech debt</span>
+          </h3>
+          <p class="mt-3 text-text-muted text-sm leading-relaxed">
+            <span class="lang-pt">Entregamos rápido porque planejamos antes de codar. Arquitetura limpa desde o início — você não paga duas vezes.</span>
+            <span class="lang-en">We ship fast because we plan before we code. Clean architecture from the start — you don't pay twice.</span>
+          </p>
+          <p class="mt-4 text-xs font-medium text-brand-600">
+            <span class="lang-pt">Chega de reescrever o MVP 3 meses depois.</span>
+            <span class="lang-en">No more rewriting the MVP 3 months later.</span>
+          </p>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="bg-surface rounded-2xl p-8 shadow-sm border border-gray-100">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center text-brand-600 mb-5">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold">
+            <span class="lang-pt">Time sênior, sem processo de hiring</span>
+            <span class="lang-en">Senior team, no hiring process</span>
+          </h3>
+          <p class="mt-3 text-text-muted text-sm leading-relaxed">
+            <span class="lang-pt">Você ganha acesso a product managers, designers e engenheiros experientes sem meses de recrutamento.</span>
+            <span class="lang-en">Get access to experienced product managers, designers, and engineers without months of recruiting.</span>
+          </p>
+          <p class="mt-4 text-xs font-medium text-brand-600">
+            <span class="lang-pt">Sem CLT, sem equity prematura, sem ramp-up.</span>
+            <span class="lang-en">No full-time hires, no premature equity, no ramp-up.</span>
+          </p>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="bg-surface rounded-2xl p-8 shadow-sm border border-gray-100">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center text-brand-600 mb-5">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold">
+            <span class="lang-pt">Parceria, não terceirização</span>
+            <span class="lang-en">Partnership, not outsourcing</span>
+          </h3>
+          <p class="mt-3 text-text-muted text-sm leading-relaxed">
+            <span class="lang-pt">Não somos uma software house que some depois da entrega. Trabalhamos junto com você como se fosse seu time.</span>
+            <span class="lang-en">We're not a software house that disappears after delivery. We work alongside you as your own team.</span>
+          </p>
+          <p class="mt-4 text-xs font-medium text-brand-600">
+            <span class="lang-pt">Seu sucesso é o nosso sucesso.</span>
+            <span class="lang-en">Your success is our success.</span>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW WE WORK ============ -->
+  <section id="how-we-work" class="py-20 md:py-28 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-center tracking-tight">
+        <span class="lang-pt">Como trabalhamos</span>
+        <span class="lang-en">How we work</span>
+      </h2>
+      <p class="mt-4 text-center text-text-muted max-w-2xl mx-auto">
+        <span class="lang-pt">Um processo simples, transparente e sem surpresas.</span>
+        <span class="lang-en">A simple, transparent process with no surprises.</span>
+      </p>
+
+      <div class="mt-14 space-y-10">
+
+        <!-- Step 1 -->
+        <div class="flex gap-6 items-start">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-600 text-white flex items-center justify-center font-bold text-sm">1</div>
+          <div>
+            <h3 class="text-lg font-bold">
+              <span class="lang-pt">Conversa inicial</span>
+              <span class="lang-en">Intro call</span>
+            </h3>
+            <p class="mt-1 text-text-muted text-sm">
+              <span class="lang-pt">Entendemos seu momento, seus desafios e o que você precisa. Sem pitch de vendas — só escuta.</span>
+              <span class="lang-en">We understand your stage, challenges, and needs. No sales pitch — just listening.</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex gap-6 items-start">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-600 text-white flex items-center justify-center font-bold text-sm">2</div>
+          <div>
+            <h3 class="text-lg font-bold">
+              <span class="lang-pt">Proposta sob medida</span>
+              <span class="lang-en">Custom proposal</span>
+            </h3>
+            <p class="mt-1 text-text-muted text-sm">
+              <span class="lang-pt">Montamos um escopo claro com entregáveis, timeline e investimento. Você aprova antes de começar.</span>
+              <span class="lang-en">We put together a clear scope with deliverables, timeline, and investment. You approve before we start.</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex gap-6 items-start">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-600 text-white flex items-center justify-center font-bold text-sm">3</div>
+          <div>
+            <h3 class="text-lg font-bold">
+              <span class="lang-pt">Execução com visibilidade total</span>
+              <span class="lang-en">Execution with full visibility</span>
+            </h3>
+            <p class="mt-1 text-text-muted text-sm">
+              <span class="lang-pt">Sprints curtos, demos semanais, comunicação assíncrona. Você vê o progresso em tempo real.</span>
+              <span class="lang-en">Short sprints, weekly demos, async communication. You see progress in real time.</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="flex gap-6 items-start">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-600 text-white flex items-center justify-center font-bold text-sm">4</div>
+          <div>
+            <h3 class="text-lg font-bold">
+              <span class="lang-pt">Entrega e continuidade</span>
+              <span class="lang-en">Delivery and continuity</span>
+            </h3>
+            <p class="mt-1 text-text-muted text-sm">
+              <span class="lang-pt">Produto no ar, documentação pronta, handoff completo. E se quiser continuar, estamos aqui.</span>
+              <span class="lang-en">Product live, documentation ready, full handoff. And if you want to continue, we're here.</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Commitments -->
+      <div class="mt-16 bg-surface-alt rounded-2xl p-8 md:p-10 border border-gray-100">
+        <h3 class="text-xl font-bold text-center">
+          <span class="lang-pt">Nossos compromissos</span>
+          <span class="lang-en">Our commitments</span>
+        </h3>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-4">
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-brand-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-sm"><span class="lang-pt">Código é seu — sempre</span><span class="lang-en">The code is yours — always</span></span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-brand-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-sm"><span class="lang-pt">Sem lock-in ou dependência</span><span class="lang-en">No lock-in or dependency</span></span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-brand-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-sm"><span class="lang-pt">Preço fechado por entrega</span><span class="lang-en">Fixed price per deliverable</span></span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-brand-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-sm"><span class="lang-pt">Comunicação transparente e direta</span><span class="lang-en">Transparent, direct communication</span></span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- FAQ -->
+      <div class="mt-16">
+        <h3 class="text-2xl font-extrabold text-center">
+          <span class="lang-pt">Perguntas frequentes</span>
+          <span class="lang-en">Frequently asked questions</span>
+        </h3>
+        <div class="mt-8 space-y-3" id="faq">
+
+          <div class="faq-item border border-gray-100 rounded-xl overflow-hidden">
+            <button class="faq-toggle w-full text-left px-6 py-4 flex items-center justify-between gap-4 cursor-pointer hover:bg-surface-alt transition-colors" type="button">
+              <span class="font-semibold text-sm">
+                <span class="lang-pt">Qual o tamanho mínimo de projeto?</span>
+                <span class="lang-en">What's the minimum project size?</span>
+              </span>
+              <svg class="faq-chevron w-5 h-5 text-text-muted transition-transform flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-content hidden px-6 pb-4">
+              <p class="text-sm text-text-muted">
+                <span class="lang-pt">Não trabalhamos com um tamanho mínimo rígido. Se o desafio faz sentido e vemos um bom fit, encontramos o formato ideal para viabilizar o projeto.</span>
+                <span class="lang-en">We don't have a strict minimum. If the problem is real and the fit makes sense, we'll find a format that works.</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item border border-gray-100 rounded-xl overflow-hidden">
+            <button class="faq-toggle w-full text-left px-6 py-4 flex items-center justify-between gap-4 cursor-pointer hover:bg-surface-alt transition-colors" type="button">
+              <span class="font-semibold text-sm">
+                <span class="lang-pt">Vocês trabalham com startups em estágio inicial?</span>
+                <span class="lang-en">Do you work with early-stage startups?</span>
+              </span>
+              <svg class="faq-chevron w-5 h-5 text-text-muted transition-transform flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-content hidden px-6 pb-4">
+              <p class="text-sm text-text-muted">
+                <span class="lang-pt">Sim. Na verdade, é onde mais geramos impacto. Ajudamos founders a sair da ideia para o produto validado.</span>
+                <span class="lang-en">Yes. In fact, that's where we create the most impact. We help founders go from idea to validated product.</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item border border-gray-100 rounded-xl overflow-hidden">
+            <button class="faq-toggle w-full text-left px-6 py-4 flex items-center justify-between gap-4 cursor-pointer hover:bg-surface-alt transition-colors" type="button">
+              <span class="font-semibold text-sm">
+                <span class="lang-pt">E se eu já tiver um time técnico?</span>
+                <span class="lang-en">What if I already have a tech team?</span>
+              </span>
+              <svg class="faq-chevron w-5 h-5 text-text-muted transition-transform flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-content hidden px-6 pb-4">
+              <p class="text-sm text-text-muted">
+                <span class="lang-pt">Perfeito. Trabalhamos como extensão do seu time, cobrindo gaps em produto, design ou engenharia.</span>
+                <span class="lang-en">Perfect. We work as an extension of your team, covering gaps in product, design, or engineering.</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item border border-gray-100 rounded-xl overflow-hidden">
+            <button class="faq-toggle w-full text-left px-6 py-4 flex items-center justify-between gap-4 cursor-pointer hover:bg-surface-alt transition-colors" type="button">
+              <span class="font-semibold text-sm">
+                <span class="lang-pt">Quais tecnologias vocês usam?</span>
+                <span class="lang-en">What technologies do you use?</span>
+              </span>
+              <svg class="faq-chevron w-5 h-5 text-text-muted transition-transform flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-content hidden px-6 pb-4">
+              <p class="text-sm text-text-muted">
+                <span class="lang-pt">Escolhemos a stack ideal para cada caso. Trabalhamos com React, Next.js, Node, Python, Go, PostgreSQL, AWS, entre outros. A decisão é sempre baseada no que faz mais sentido pro seu produto.</span>
+                <span class="lang-en">We pick the ideal stack for each case. We work with React, Next.js, Node, Python, Go, PostgreSQL, AWS, and more. The decision is always based on what makes the most sense for your product.</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item border border-gray-100 rounded-xl overflow-hidden">
+            <button class="faq-toggle w-full text-left px-6 py-4 flex items-center justify-between gap-4 cursor-pointer hover:bg-surface-alt transition-colors" type="button">
+              <span class="font-semibold text-sm">
+                <span class="lang-pt">Como funciona o modelo de preço?</span>
+                <span class="lang-en">How does pricing work?</span>
+              </span>
+              <svg class="faq-chevron w-5 h-5 text-text-muted transition-transform flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-content hidden px-6 pb-4">
+              <p class="text-sm text-text-muted">
+                <span class="lang-pt">Preço fechado por escopo. Você sabe exatamente quanto vai investir antes de começar. Sem surpresas, sem hora extra escondida.</span>
+                <span class="lang-en">Fixed price per scope. You know exactly how much you'll invest before we start. No surprises, no hidden overtime.</span>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA + FORM ============ -->
+  <section id="contact" class="py-20 md:py-28 bg-surface-alt px-6">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+        <span class="lang-pt">Vamos conversar?</span>
+        <span class="lang-en">Let's talk?</span>
+      </h2>
+      <p class="mt-4 text-text-muted">
+        <span class="lang-pt">Conta pra gente sobre seu projeto. Respondemos em até 24h.</span>
+        <span class="lang-en">Tell us about your project. We respond within 24h.</span>
+      </p>
+
+      <form id="contact-form" action="http://localhost:8080/email" method="POST" class="mt-10 space-y-5 text-left">
+        <div>
+          <label for="name" class="block text-sm font-medium mb-1.5">
+            <span class="lang-pt">Nome</span>
+            <span class="lang-en">Name</span>
+          </label>
+          <input type="text" id="name" name="name" required
+            class="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition">
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium mb-1.5">
+            <span class="lang-pt">E-mail</span>
+            <span class="lang-en">Email</span>
+          </label>
+          <input type="email" id="email" name="email" required
+            class="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition">
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-medium mb-1.5">
+            <span class="lang-pt">Sobre o projeto</span>
+            <span class="lang-en">About your project</span>
+          </label>
+          <textarea id="message" name="message" rows="4" required
+            class="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition resize-y"></textarea>
+        </div>
+        <button type="submit"
+          class="w-full py-3.5 rounded-lg bg-brand-600 text-white font-semibold text-base hover:bg-brand-700 transition-colors shadow-lg shadow-brand-600/25 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
+          <span class="lang-pt">Enviar mensagem</span>
+          <span class="lang-en">Send message</span>
+        </button>
+        <p id="form-success" class="hidden text-sm text-green-600 text-center font-medium">
+          <span class="lang-pt">Mensagem enviada com sucesso!</span>
+          <span class="lang-en">Message sent successfully!</span>
+        </p>
+        <p id="form-error" class="hidden text-sm text-red-600 text-center font-medium">
+          <span class="lang-pt">Erro ao enviar. Tente novamente.</span>
+          <span class="lang-en">Something went wrong. Please try again.</span>
+        </p>
+        <p class="text-xs text-text-muted text-center">
+          <span class="lang-pt">Sem spam. Seus dados ficam seguros.</span>
+          <span class="lang-en">No spam. Your data stays safe.</span>
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="py-8 px-6 border-t border-gray-100">
+    <p class="text-center text-sm text-text-muted">
+      &copy; 2026 Nilo Labs. <span class="lang-pt">Todos os direitos reservados.</span><span class="lang-en">All rights reserved.</span>
+    </p>
+  </footer>
+
+  <!-- ============ SCRIPTS ============ -->
+  <script>
+    (function () {
+      // Language toggle
+      const html = document.documentElement;
+      const toggle = document.getElementById('lang-toggle');
+      const stored = localStorage.getItem('lang');
+
+      function setLang(lang) {
+        html.setAttribute('data-lang', lang);
+        html.setAttribute('lang', lang === 'pt' ? 'pt-BR' : 'en-US');
+        localStorage.setItem('lang', lang);
+      }
+
+      // Init: stored > browser locale > pt
+      if (stored) {
+        setLang(stored);
+      } else if (!navigator.language.startsWith('pt')) {
+        setLang('en');
+      }
+
+      toggle.addEventListener('click', function () {
+        const current = html.getAttribute('data-lang');
+        setLang(current === 'pt' ? 'en' : 'pt');
+      });
+
+      // Contact form — progressive enhancement
+      var form = document.getElementById('contact-form');
+      var formSuccess = document.getElementById('form-success');
+      var formError = document.getElementById('form-error');
+      var submitBtn = form.querySelector('button[type="submit"]');
+
+      // No-JS fallback: check for ?error=true on page load (backend redirect)
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('error') === 'true') {
+        formError.classList.remove('hidden');
+        form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        history.replaceState(null, '', window.location.pathname + window.location.hash);
+      }
+
+      // JS-enhanced submit via fetch
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        formSuccess.classList.add('hidden');
+        formError.classList.add('hidden');
+        submitBtn.disabled = true;
+
+        fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+        })
+          .then(function (res) {
+            if (!res.ok) throw new Error(res.status);
+            formSuccess.classList.remove('hidden');
+            form.reset();
+          })
+          .catch(function () {
+            formError.classList.remove('hidden');
+          })
+          .finally(function () {
+            submitBtn.disabled = false;
+          });
+      });
+
+      // FAQ accordion
+      document.querySelectorAll('.faq-toggle').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const item = btn.closest('.faq-item');
+          const content = item.querySelector('.faq-content');
+          const chevron = item.querySelector('.faq-chevron');
+          const isOpen = !content.classList.contains('hidden');
+
+          // Close all
+          document.querySelectorAll('.faq-item').forEach(function (el) {
+            el.querySelector('.faq-content').classList.add('hidden');
+            el.querySelector('.faq-chevron').classList.remove('rotate-180');
+          });
+
+          // Open clicked (if it was closed)
+          if (!isOpen) {
+            content.classList.remove('hidden');
+            chevron.classList.add('rotate-180');
+          }
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
